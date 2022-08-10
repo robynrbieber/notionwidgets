@@ -9,6 +9,18 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>HTML 5 Boilerplate</title>
     <link rel="stylesheet" href="style.css">
+	  
+	  <script> var invocation = new XMLHttpRequest();
+var url = 'https://gingkowriter.com/';
+
+function callOtherDomain(){
+  if(invocation) {
+    invocation.open('GET', url, true);
+    invocation.withCredentials = true;
+    invocation.onreadystatechange = handler; // Needs to be implemented
+    invocation.send(); 
+  }
+}</script>
   </head>
   <body>
    <iframe loading="lazy" src="//gingkowriter.com/" name="iFrame Name" id="upload-iframe" base target="_parent"   scrolling="Yes" height="800px" width="100%" style="border: none;"></iframe> 
